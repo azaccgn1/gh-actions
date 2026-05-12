@@ -12,10 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print os info
-        run: cat /etc/os-release
-      - name: print passwd
-        run: cat /etc/passwd
-      - name: total cpu
-        run: nproc
-      - name: memory
-        run: free -m
+        run: | 
+          cat /etc/os-release 
+          lscpu
+          nproc
+          free -m
+          id
+          
