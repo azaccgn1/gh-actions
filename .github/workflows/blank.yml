@@ -9,7 +9,7 @@ jobs:
       - name: Print Goodbye
         run: echo "Good Bye"
   second-jobs:
-    runs-on: ububuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: print os info
         run: cat /etc/os-release
