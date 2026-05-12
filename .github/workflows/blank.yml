@@ -1,0 +1,17 @@
+name: First Github Action
+on: workflow_dispatch
+jobs:
+  first-jobs: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: print greetings
+        run: echo "Hello world"
+      - name: Print Goodbye
+        run: echo "Good Bye"
+  second-jobs:
+    runs-on: ububuntu-22.04
+    steps:
+      - name: print os info
+        run: cat /etc/os-release
+      - name: print passwd
+        run: cat /etc/passwd
